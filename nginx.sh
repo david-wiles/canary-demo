@@ -1,5 +1,6 @@
 # Remove user from nginx.conf
 cat << EOF | sudo tee /etc/nginx/nginx.conf > /dev/null
+user asdf;
 worker_processes auto;
 pid /run/nginx.pid;
 include /etc/nginx/modules-enabled/*.conf;
